@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netflix Mobile</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="navbar__container navbar__container--primary">
+          <img class="navbar__logo" src="./images/Netflix_2015_logo.svg.png" />
+          <input type="checkbox" class="navbar__toggle" id="navbar__toggle" />
+          <!--label "for" only works with id-->
+          <label for="navbar__toggle" class="navbar__toggle--label">
+            <i class="fa-solid fa-bars"></i>
+            <span></span>
+          </label>
+          <ul class="navbar__dropdown--items">
+            <li>
+              <a href="#" class="navbar__link navbar__dropdown--item">Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar__link navbar__dropdown--item"
+                >TV Shows</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navbar__link navbar__dropdown--item">Movies</a>
+            </li>
+            <li>
+              <a href="#" class="navbar__link navbar__dropdown--item"
+                >New & Popular</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navbar__link navbar__dropdown--item"
+                >My List</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__container navbar__container--secondary">
+          <input type="text" class="navbar__search" />
+          <button class="navbar__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="#" class="navbar__link navbar__item-desktop">Kids</a>
+          <button class="navbar__button">
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <a href="#" class="navbar__link"
+            ><img class="navbar__image" src="./images/netflix-pp.webp"
+          /></a>
+          <button class="navbar__button navbar__item-desktop">
+            <i class="fa-solid fa-sort-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="movie-list"></div>
+    </div>
+  </body>
+</html>
