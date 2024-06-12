@@ -164,7 +164,6 @@ ul {
   display: flex;
   justify-content: space-around;
   gap: 0.65em;
-  border: solid salmon;
   z-index: 99;
 }
 .hero__button {
@@ -172,6 +171,23 @@ ul {
   border-radius: 5px;
   padding: 0.6em 1.5em;
   font-size: var(--button);
+}
+
+.movie-list__container {
+  display: flex;
+  flex-direction: column;
+  border: solid peru;
+  position: relative;
+  top: -5rem;
+}
+.movie-list__item {
+  object-fit: cover;
+  margin: 0 0.1rem;
+  border-radius: 5px;
+  aspect-ratio: 3/5;
+  width: 18%;
+  overflow-x: scroll;
+  border: solid black;
 }
 
 @media screen and (min-width: 800px) {
@@ -211,15 +227,22 @@ ul {
   }
   .hero__image {
     object-fit: cover;
-    height: 85vh;
+    height: 90vh;
   }
   .hero__details {
     gap: 1rem;
-    bottom: 1rem;
+    bottom: 5rem;
     left: 1rem;
     width: 50%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .movie-list {
+    position: relative;
+    top: -5rem;
+  }
+  .movie-list__item {
+    aspect-ratio: 5/3;
   }
 }
